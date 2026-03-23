@@ -1,0 +1,11 @@
+y_speed = 5
+x_speed = 0
+alive = true
+can_jump = true
+grav = 1
+global.enemies = 0
+global.fires = 0
+time_alive = 0
+deaths = 0
+touching_death = false
+global.movement_speed = 3

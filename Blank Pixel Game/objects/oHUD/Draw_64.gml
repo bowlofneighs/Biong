@@ -1,0 +1,1 @@
+draw_text(250, 0, "Score: " + string(round(oPlayer.time_alive / 60)) + " Deaths: " + string(oPlayer.deaths))
