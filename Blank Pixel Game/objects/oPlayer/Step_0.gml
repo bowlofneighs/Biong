@@ -50,9 +50,9 @@ if(spawn == 150){
 	instance_create_layer(250, irandom_range(200, 600), "Instances", oBat)
 }
 if(time_alive > 300 and spawn == 100 and global.fires == 0){
-	instance_create_layer(500, irandom_range(200, 600), "Instances", oFire)
+	instance_create_layer(250, irandom_range(200, 600), "Instances", oPlaneWarning)
 }
-if(spawn == 120){
+if(spawn == 120 and global.hearts == 0){
 	instance_create_layer(irandom(576), irandom(1024), "Instances", oHeart)
 }
 

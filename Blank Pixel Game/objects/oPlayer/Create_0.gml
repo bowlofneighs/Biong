@@ -9,3 +9,4 @@ time_alive = 0
 deaths = 0
 touching_death = false
 global.movement_speed = 3
+global.hearts = 0
