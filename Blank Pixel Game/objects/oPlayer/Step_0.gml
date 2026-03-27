@@ -21,7 +21,7 @@ if(keyboard_check_pressed(vk_up)  and can_jump ){
 	y_speed = -30 * global.movement_speed / 2
 }
 if(keyboard_check_pressed(vk_down)){
-	y_speed = 30 * global.movement_speed / 2 
+	y_speed = 30 * global.movement_speed / 2
 }
 
 wrap_around()
@@ -29,7 +29,12 @@ wrap_around()
 	
 y_speed = bounce(y_speed)
 
-
+if(place_meeting(x + x_speed, y, oThrowBox)){
+	x_speed = -x_speed + oThrowBox.x_speed
+}
+if(place_meeting(x, y + y_speed, oThrowBox)){
+	y_speed = (-y_speed + oThrowBox.y_speed)/global.movement_speed
+}
 y_speed+= grav;
 
 if(can_jump = false){
@@ -44,16 +49,19 @@ show_debug_message($"x_speed = {x_speed} y_speed = {y_speed} can_jump = {can_jum
 move_and_collide(x_speed/global.movement_speed, y_speed/global.movement_speed, oSolid);
 time_alive += 1
 check_death()
-spawn = irandom(200)
+spawn = irandom(400)
 
-if(spawn == 150){
+if((spawn == 150 or spawn == 151) and global.enemies < 5){
 	instance_create_layer(250, irandom_range(200, 600), "Instances", oBat)
 }
-if(time_alive > 300 and spawn == 100 and global.fires == 0){
+if(time_alive > 300 and (spawn == 100 or spawn == 101) and global.fires == 0){
 	instance_create_layer(250, irandom_range(200, 600), "Instances", oPlaneWarning)
 }
-if(spawn == 120 and global.hearts == 0){
+if((spawn == 120 or spawn == 121) and global.hearts == 0){
 	instance_create_layer(irandom(576), irandom(1024), "Instances", oHeart)
+}
+if(global.boxes == 0 and spawn == 140){
+	instance_create_layer(1000, irandom_range(0, 768), "Instances", oThrowBox)
 }
 
 function bounce(y_speed){

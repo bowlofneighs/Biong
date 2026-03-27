@@ -10,8 +10,8 @@
   },
   "defaultScriptType":1,
   "Folders":[
-    {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
@@ -19,7 +19,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.14.4.221",
   },
   "name":"Blank Pixel Game",
   "resources":[
@@ -34,6 +34,7 @@
     {"id":{"name":"oPlaneWarning","path":"objects/oPlaneWarning/oPlaneWarning.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oSolid","path":"objects/oSolid/oSolid.yy",},},
+    {"id":{"name":"oThrowBox","path":"objects/oThrowBox/oThrowBox.yy",},},
     {"id":{"name":"oUnderFloor","path":"objects/oUnderFloor/oUnderFloor.yy",},},
     {"id":{"name":"pRedBurst","path":"particles/pRedBurst/pRedBurst.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
@@ -46,6 +47,7 @@
     {"id":{"name":"sPlane","path":"sprites/sPlane/sPlane.yy",},},
     {"id":{"name":"sPlaneWarning","path":"sprites/sPlaneWarning/sPlaneWarning.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
+    {"id":{"name":"sThrowBox","path":"sprites/sThrowBox/sThrowBox.yy",},},
     {"id":{"name":"sUnderFloor","path":"sprites/sUnderFloor/sUnderFloor.yy",},},
   ],
   "resourceType":"GMProject",
