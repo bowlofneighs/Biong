@@ -30,10 +30,10 @@ wrap_around()
 y_speed = bounce(y_speed)
 
 if(place_meeting(x + x_speed, y, oThrowBox)){
-	x_speed = -x_speed + oThrowBox.x_speed
+	x_speed = -x_speed + oThrowBox.x_speed * 2
 }
 if(place_meeting(x, y + y_speed, oThrowBox)){
-	y_speed = (-y_speed + oThrowBox.y_speed)/global.movement_speed
+	y_speed = (-y_speed + oThrowBox.y_speed)
 }
 y_speed+= grav;
 
@@ -88,6 +88,14 @@ function check_death(){
 	if(place_meeting(x,y, oDeath) and touching_death == false){
 		deaths++
 		touching_death = true
+		switch(irandom(2)) {
+			case 0:
+				audio_play_sound(SNDhurt0, 1, 0)
+				break
+			case 1:
+				audio_play_sound(SNDhurt1, 1, 0)
+				break
+		}
 		} 
 		if(not place_meeting(x,y,oDeath)){
 			touching_death = false

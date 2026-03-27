@@ -12,6 +12,7 @@
   "Folders":[
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
@@ -38,6 +39,8 @@
     {"id":{"name":"oUnderFloor","path":"objects/oUnderFloor/oUnderFloor.yy",},},
     {"id":{"name":"pRedBurst","path":"particles/pRedBurst/pRedBurst.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"SNDhurt0","path":"sounds/SNDhurt0/SNDhurt0.yy",},},
+    {"id":{"name":"SNDhurt1","path":"sounds/SNDhurt1/SNDhurt1.yy",},},
     {"id":{"name":"sBackground","path":"sprites/sBackground/sBackground.yy",},},
     {"id":{"name":"sBat","path":"sprites/sBat/sBat.yy",},},
     {"id":{"name":"sControlIndicator","path":"sprites/sControlIndicator/sControlIndicator.yy",},},
