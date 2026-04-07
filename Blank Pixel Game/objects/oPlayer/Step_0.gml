@@ -51,7 +51,7 @@ time_alive += 1
 check_death()
 spawn = irandom(400)
 
-if((spawn == 150 or spawn == 151) and global.enemies < 5){
+if(spawn == 100 and global.enemies < 5){
 	instance_create_layer(250, irandom_range(200, 600), "Instances", oBat)
 }
 if(time_alive > 300 and (spawn == 100 or spawn == 101) and global.fires == 0){
@@ -66,6 +66,7 @@ if(global.boxes == 0 and spawn == 140){
 
 function bounce(y_speed){
 	if(place_meeting(x, y + 2, oSolid ) or (820 < y and y < 832) ){
+		audio_play_sound(SNDboing, 1, 0)
 		if( y_speed > 10){
 			y_speed = -y_speed + 3
 		} else {
@@ -88,7 +89,7 @@ function check_death(){
 	if(place_meeting(x,y, oDeath) and touching_death == false){
 		deaths++
 		touching_death = true
-		switch(irandom(2)) {
+		switch(irandom(1)) {
 			case 0:
 				audio_play_sound(SNDhurt0, 1, 0)
 				break
